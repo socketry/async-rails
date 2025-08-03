@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require_relative "lib/async/rails/version"
+require_relative "lib/falcon/rails/version"
 
 Gem::Specification.new do |spec|
-	spec.name = "async-rails-x"
-	spec.version = Async::Rails::VERSION
+	spec.name = "falcon-rails"
+	spec.version = Falcon::Rails::VERSION
 	
-	spec.summary = "Configuration for Async Rails."
+	spec.summary = "Easy Falcon and Rails integration."
 	spec.authors = ["Samuel Williams"]
 	spec.license = "MIT"
 	
 	spec.cert_chain  = ["release.cert"]
 	spec.signing_key = File.expand_path("~/.gem/release.pem")
 	
-	spec.homepage = "https://github.com/socketry/async-rails"
+	spec.homepage = "https://github.com/socketry/falcon-rails"
 	
 	spec.metadata = {
-		"documentation_uri" => "https://socketry.github.io/async-rails/",
-		"source_code_uri" => "https://github.com/socketry/async-rails.git",
+		"documentation_uri" => "https://socketry.github.io/falcon-rails/",
+		"source_code_uri" => "https://github.com/socketry/falcon-rails.git",
 	}
 	
 	spec.files = Dir["{context,lib}/**/*", "*.md", base: __dir__]

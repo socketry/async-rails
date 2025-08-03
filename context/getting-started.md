@@ -1,22 +1,22 @@
 # Getting Started
 
-This guide explains how to get started integrating Async with Rails.
+This guide explains how to get started using Falcon to host your Rails application.
 
 ## Installation
 
 In your existing Rails application:
 
 ```bash
-bundle add async-rails
+bundle add falcon-rails
 ```
 
-You might also like to remove your existing web server, such as Puma, and replace it with Async's web server:
+You might also like to remove your existing web server, such as Puma, and replace it with Falcon:
 
 ```bash
 bundle remove puma
 ```
 
-## Falcon (Web Server)
+## Usage
 
 Falcon is an Async-compatible web server that can be used with Rails. It provides high concurrency and low latency for web applications.
 
@@ -36,8 +36,8 @@ You can access your application at `https://localhost:9292`.
 
 ## Integrations
 
-Consult the other integration guides for more information on using Async with popular libraries and frameworks.
-
+Consult the other integration guides for more information on using Falcon with popular libraries and frameworks.
+	
 ### Example
 
-Many of the integrations are demonstrated in the example application available at: https://github.com/socketry/async-rails-examples
+Many of the integrations are demonstrated in the example application available at: https://github.com/socketry/falcon-rails-examples

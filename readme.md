@@ -2,27 +2,27 @@
 
 Provides integration support for Async and Rails, allowing you to use Async's concurrency model within a Rails application.
 
-[![Development Status](https://github.com/socketry/async-rails/workflows/Test/badge.svg)](https://github.com/socketry/async-rails/actions?workflow=Test)
+[![Development Status](https://github.com/socketry/falcon-rails/workflows/Test/badge.svg)](https://github.com/socketry/falcon-rails/actions?workflow=Test)
 
 ## Usage
 
-Please see the [project documentation](https://socketry.github.io/async-rails/) for more details.
+Please see the [project documentation](https://socketry.github.io/falcon-rails/) for more details.
 
-  - [Getting Started](https://socketry.github.io/async-rails/guides/getting-started/index) - This guide explains how to get started integrating Async with Rails.
+  - [Getting Started](https://socketry.github.io/falcon-rails/guides/getting-started/index) - This guide explains how to get started integrating Async with Rails.
 
-  - [Job Processing](https://socketry.github.io/async-rails/guides/job-processing/index) - This guide explains how to implement background job processing with Falcon and Rails using the `async-job` gem.
+  - [Job Processing](https://socketry.github.io/falcon-rails/guides/job-processing/index) - This guide explains how to implement background job processing with Falcon and Rails using the `async-job` gem.
 
-  - [HTTP Streaming](https://socketry.github.io/async-rails/guides/http-streaming/index) - This guide explains how to implement HTTP response streaming with Falcon and Rails.
+  - [HTTP Streaming](https://socketry.github.io/falcon-rails/guides/http-streaming/index) - This guide explains how to implement HTTP response streaming with Falcon and Rails.
 
-  - [Server-Sent Events](https://socketry.github.io/async-rails/guides/server-sent-events/index) - This guide explains how to implement Server-Sent Events with Falcon and Rails.
+  - [Server-Sent Events](https://socketry.github.io/falcon-rails/guides/server-sent-events/index) - This guide explains how to implement Server-Sent Events with Falcon and Rails.
 
-  - [WebSockets](https://socketry.github.io/async-rails/guides/websockets/index) - This guide explains how to implement WebSocket connections with Falcon and Rails.
+  - [WebSockets](https://socketry.github.io/falcon-rails/guides/websockets/index) - This guide explains how to implement WebSocket connections with Falcon and Rails.
 
-  - [Real-Time Views](https://socketry.github.io/async-rails/guides/real-time-views/index) - This guide explains how to implement real-time interfaces with `Live::View`.
+  - [Real-Time Views](https://socketry.github.io/falcon-rails/guides/real-time-views/index) - This guide explains how to implement real-time interfaces with `Live::View`.
 
 ## Releases
 
-Please see the [project releases](https://socketry.github.io/async-rails/releases/index) for all releases.
+Please see the [project releases](https://socketry.github.io/falcon-rails/releases/index) for all releases.
 
 ### v0.1.0
 
