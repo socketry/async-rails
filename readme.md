@@ -8,9 +8,23 @@ Provides integration support for Async and Rails, allowing you to use Async's co
 
 Please see the [project documentation](https://socketry.github.io/async-rails/) for more details.
 
+  - [Getting Started](https://socketry.github.io/async-rails/guides/getting-started/index) - This guide explains how to get started integrating Async with Rails.
+
+  - [Job Processing](https://socketry.github.io/async-rails/guides/job-processing/index) - This guide explains how to implement background job processing with Falcon and Rails using the `async-job` gem.
+
+  - [HTTP Streaming](https://socketry.github.io/async-rails/guides/http-streaming/index) - This guide explains how to implement HTTP response streaming with Falcon and Rails.
+
+  - [Server-Sent Events](https://socketry.github.io/async-rails/guides/server-sent-events/index) - This guide explains how to implement Server-Sent Events with Falcon and Rails.
+
+  - [WebSockets](https://socketry.github.io/async-rails/guides/websockets/index) - This guide explains how to implement WebSocket connections with Falcon and Rails.
+
+  - [Real-Time Views](https://socketry.github.io/async-rails/guides/real-time-views/index) - This guide explains how to implement real-time interfaces with `Live::View`.
+
 ## Releases
 
 Please see the [project releases](https://socketry.github.io/async-rails/releases/index) for all releases.
+
+### v0.1.0
 
 ## See Also
 
