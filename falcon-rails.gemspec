@@ -27,9 +27,11 @@ Gem::Specification.new do |spec|
 	spec.add_dependency "async-cable"
 	spec.add_dependency "async-job-adapter-active_job"
 	spec.add_dependency "async-websocket"
+	spec.add_dependency "bake"
 	spec.add_dependency "console-adapter-rails"
 	spec.add_dependency "falcon"
 	spec.add_dependency "live"
+	spec.add_dependency "traces-backend-open_telemetry"
 	
 	spec.add_dependency "rails", ">= 8.0"
 end
