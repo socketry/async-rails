@@ -1,4 +1,4 @@
-# WebSocket Communication
+# WebSockets
 
 This guide explains how to implement WebSocket connections with Falcon and Rails.
 

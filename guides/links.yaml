@@ -1,7 +1,7 @@
 getting-started:
   order: 1
 
-async-jobs:
+job-processing:
   order: 2
 
 http-streaming:
@@ -13,5 +13,5 @@ server-sent-events:
 websockets:
   order: 5
 
-live-view:
+real-time-views:
   order: 6

@@ -1,10 +1,10 @@
 # Job Processing
 
-This guide explains how to implement background job processing with Falcon and Rails using the async-job gem.
+This guide explains how to implement background job processing with Falcon and Rails using the `async-job` gem.
 
-## What are Async Jobs?
+## What is Async::Job?
 
-Async jobs allow you to perform work in the background without blocking web requests. The async-job gem provides high-performance job processing that integrates seamlessly with Rails' ActiveJob.
+`Async::Job` is a framework for creating background jobs that run asynchronously without blocking web requests. It integrates seamlessly with Rails' ActiveJob, allowing you to offload long-running tasks to background workers. The Rails integration uses a specific gem to provide this functionality, called `async-job-adapter-active_job`.
 
 **When to use async jobs:**
 - Long-running tasks (data processing, file uploads).
