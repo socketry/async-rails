@@ -15,6 +15,11 @@ Please see the [project releases](https://socketry.github.io/async-rails/release
 ## See Also
 
   - [Async](https://github.com/socketry/async) - The core library for asynchronous programming in Ruby.
+  - [Async::Cable](https://github.com/socketry/async-cable) - Async-compatible ActionCable implementation.
+  - [Async::Job](https://github.com/socketry/async-job) - Background job processing with ActiveJob adapter.
+  - [Console::Adapter::Rails](https://github.com/socketry/console-adapter-rails) - Rails logging adapter for the console gem.
+  - [Falcon](https://github.com/socketry/falcon) - High-performance web server for Ruby.
+  - [Live](https://github.com/socketry/live) - Real-time server components for interactive web applications.
 
 ## Contributing
 
