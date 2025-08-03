@@ -1,4 +1,4 @@
-# Async Jobs with Falcon and Rails
+# Job Processing
 
 This guide explains how to implement background job processing with Falcon and Rails using the async-job gem.
 

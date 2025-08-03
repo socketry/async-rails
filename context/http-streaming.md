@@ -1,4 +1,4 @@
-# HTTP Streaming with Falcon and Rails
+# HTTP Streaming
 
 This guide explains how to implement HTTP response streaming with Falcon and Rails.
 

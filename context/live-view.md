@@ -1,4 +1,4 @@
-# Live::View with Falcon and Rails
+# Real-Time Views
 
 This guide explains how to implement real-time interfaces with `Live::View`.
 

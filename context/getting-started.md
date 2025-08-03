@@ -37,3 +37,7 @@ You can access your application at `https://localhost:9292`.
 ## Integrations
 
 Consult the other integration guides for more information on using Async with popular libraries and frameworks.
+
+### Example
+
+Many of the integrations are demonstrated in the example application available at: https://github.com/socketry/async-rails-examples

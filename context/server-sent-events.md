@@ -1,4 +1,4 @@
-# Server-Sent Events (SSE) with Falcon and Rails
+# Server-Sent Events
 
 This guide explains how to implement Server-Sent Events with Falcon and Rails.
 
