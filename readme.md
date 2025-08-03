@@ -8,7 +8,7 @@ Provides integration support for Async and Rails, allowing you to use Async's co
 
 Please see the [project documentation](https://socketry.github.io/falcon-rails/) for more details.
 
-  - [Getting Started](https://socketry.github.io/falcon-rails/guides/getting-started/index) - This guide explains how to get started integrating Async with Rails.
+  - [Getting Started](https://socketry.github.io/falcon-rails/guides/getting-started/index) - This guide explains how to get started using Falcon to host your Rails application.
 
   - [Job Processing](https://socketry.github.io/falcon-rails/guides/job-processing/index) - This guide explains how to implement background job processing with Falcon and Rails using the `async-job` gem.
 
