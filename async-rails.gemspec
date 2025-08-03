@@ -3,7 +3,7 @@
 require_relative "lib/async/rails/version"
 
 Gem::Specification.new do |spec|
-	spec.name = "async-rails"
+	spec.name = "async-rails-x"
 	spec.version = Async::Rails::VERSION
 	
 	spec.summary = "Configuration for Async Rails."
