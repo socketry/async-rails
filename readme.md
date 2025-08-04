@@ -1,6 +1,6 @@
-# Async::Rails
+# Falcon::Rails
 
-Provides integration support for Async and Rails, allowing you to use Async's concurrency model within a Rails application.
+Provides integration support for Falcon and Rails, allowing you to use Falcon's concurrency model within a Rails application.
 
 [![Development Status](https://github.com/socketry/falcon-rails/workflows/Test/badge.svg)](https://github.com/socketry/falcon-rails/actions?workflow=Test)
 
