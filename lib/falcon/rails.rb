@@ -5,7 +5,8 @@
 
 require_relative "rails/version"
 
-require "falcon"
+# Don't do this, it will cause load order issues:
+# require "falcon"
 
 # Load all the dependencies:
 require "async/cable"
