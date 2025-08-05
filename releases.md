@@ -1,3 +1,5 @@
 # Releases
 
-## v0.1.0
+## Unreleased
+
+  - Tidy up organization of guides + agent context.

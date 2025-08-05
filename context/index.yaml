@@ -1,0 +1,31 @@
+# Automatically generated context index for Utopia::Project guides.
+# Do not edit then files in this directory directly, instead edit the guides and then run `bake utopia:project:agent:context:update`.
+---
+description: Easy Falcon and Rails integration.
+metadata:
+  documentation_uri: https://socketry.github.io/falcon-rails/
+  source_code_uri: https://github.com/socketry/falcon-rails.git
+files:
+- path: getting-started.md
+  title: Getting Started
+  description: This guide explains how to get started using Falcon to host your Rails
+    application.
+- path: job-processing.md
+  title: Job Processing
+  description: This guide explains how to implement background job processing with
+    Falcon and Rails using the `async-job` gem.
+- path: http-streaming.md
+  title: HTTP Streaming
+  description: This guide explains how to implement HTTP response streaming with Falcon
+    and Rails.
+- path: server-sent-events.md
+  title: Server-Sent Events
+  description: This guide explains how to implement Server-Sent Events with Falcon
+    and Rails.
+- path: websockets.md
+  title: WebSockets
+  description: This guide explains how to implement WebSocket connections with Falcon
+    and Rails.
+- path: real-time-views.md
+  title: Real-Time Views
+  description: This guide explains how to implement real-time interfaces with `Live::View`.
