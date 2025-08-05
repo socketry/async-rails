@@ -24,7 +24,9 @@ Please see the [project documentation](https://socketry.github.io/falcon-rails/)
 
 Please see the [project releases](https://socketry.github.io/falcon-rails/releases/index) for all releases.
 
-### v0.1.0
+### v0.2.4
+
+  - Tidy up organization of guides + agent context.
 
 ## See Also
 
