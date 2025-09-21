@@ -56,7 +56,7 @@ pin "live"
 Create a `Live::View` class that handles the real-time logic:
 
 ```ruby
-require 'live'
+require "live"
 
 class ClockTag < Live::View
 	def initialize(...)
@@ -86,7 +86,7 @@ class ClockTag < Live::View
 	def forward_event(name)
 		"event.preventDefault(); live.forwardEvent(#{JSON.dump(@id)}, event, {name: #{name.inspect}})"
 	end
-
+	
 	def render(builder)
 		builder.tag(:div, class: "clock-container") do
 			builder.tag(:h2) {builder.text("Live Clock")}
@@ -110,13 +110,13 @@ end
 Create a controller to handle the Live::View connection:
 
 ```ruby
-require 'async/websocket/adapters/rails'
+require "async/websocket/adapters/rails"
 
 class ClockController < ApplicationController
 	RESOLVER = Live::Resolver.allow(ClockTag)
-
+	
 	def index
-		@tag = ClockTag.new('clock')
+		@tag = ClockTag.new("clock")
 	end
 	
 	skip_before_action :verify_authenticity_token, only: :live
@@ -200,7 +200,7 @@ end
 class CounterTag < Live::View
 	def initialize(count: 0)
 		super
-
+		
 		# @data is persisted on the tag in `data-` attributes.
 		@data["count"] = @data.fetch("count", count).to_i
 	end
@@ -230,10 +230,10 @@ class CounterTag < Live::View
 	def forward_event(name)
 		"event.preventDefault(); live.forwardEvent(#{JSON.dump(@id)}, event, {name: #{name.inspect}})"
 	end
-
+	
 	def render(builder)
 		builder.tag(:div, class: "counter-container") do
-			builder.tag(:h2) { builder.text("Live Counter") }
+			builder.tag(:h2) {builder.text("Live Counter")}
 			
 			builder.tag(:div, id: "counter", class: "counter-display") do
 				builder.text(@count.to_s)

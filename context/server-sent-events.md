@@ -30,11 +30,11 @@ class SseController < ApplicationController
 	end
 	
 	EVENT_STREAM_HEADERS = {
-		'content-type' => 'text/event-stream',
-		'cache-control' => 'no-cache',
-		'connection' => 'keep-alive'
+		"content-type" => "text/event-stream",
+		"cache-control" => "no-cache",
+		"connection" => "keep-alive"
 	}
-
+	
 	def events
 		body = proc do |stream|
 			while true
@@ -108,8 +108,8 @@ Add routes to your `config/routes.rb`:
 ```ruby
 Rails.application.routes.draw do
 	# SSE Example:
-	get 'sse/index'    # Page with EventSource JavaScript
-	get 'sse/events'   # SSE endpoint
+	get "sse/index"    # Page with EventSource JavaScript
+	get "sse/events"   # SSE endpoint
 end
 ```
 

@@ -44,10 +44,10 @@ end
 Configure async-job queues in `config/initializers/async_job.rb`:
 
 ```ruby
-require 'async/job'
-require 'async/job/processor/aggregate'
-require 'async/job/processor/redis'
-require 'async/job/processor/inline'
+require "async/job"
+require "async/job/processor/aggregate"
+require "async/job/processor/redis"
+require "async/job/processor/inline"
 
 Rails.application.configure do
 	config.async_job.define_queue "default" do

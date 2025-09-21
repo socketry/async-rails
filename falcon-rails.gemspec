@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency "bake"
 	spec.add_dependency "console-adapter-rails"
 	spec.add_dependency "falcon"
+	spec.add_dependency "falcon-limiter"
 	spec.add_dependency "live"
-	
 	spec.add_dependency "rails", ">= 8.0"
 end

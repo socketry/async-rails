@@ -42,7 +42,7 @@ class StreamingController < ApplicationController
 				sleep 1
 			end
 		end
-
+		
 		self.response = Rack::Response[200, {"content-type" => "text/plain"}, body]
 	end
 end
@@ -137,8 +137,8 @@ Add routes to your `config/routes.rb`:
 ```ruby
 Rails.application.routes.draw do
 	# Streaming Example:
-	get 'streaming/index'  # Page with streaming JavaScript
-	get 'streaming/stream' # HTTP streaming endpoint
+	get "streaming/index"  # Page with streaming JavaScript
+	get "streaming/stream" # HTTP streaming endpoint
 end
 ```
 

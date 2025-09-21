@@ -23,15 +23,15 @@ WebSockets provide full-duplex communication between client and server over a si
 Create a controller that handles WebSocket connections:
 
 ```ruby
-require 'async/websocket/adapters/rails'
+require "async/websocket/adapters/rails"
 
 class ChatController < ApplicationController
 	def index
 		# Render the page with WebSocket JavaScript
 	end
-
+	
 	skip_before_action :verify_authenticity_token, only: :connect
-
+	
 	def connect
 		self.response = Async::WebSocket::Adapters::Rails.open(request) do |connection|
 			Sync do
