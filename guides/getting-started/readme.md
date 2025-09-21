@@ -127,24 +127,6 @@ service hostname do
 end
 ```
 
-## Troubleshooting
-
-### Common Issues
-
-**Port already in use**: If you get a "port already in use" error, either stop the other process or change the port:
-
-```bash
-bundle exec falcon serve -b http://localhost:3001
-```
-
-**Certificate warnings in development**: Install the development certificates:
-
-```bash
-bundle exec bake localhost:install
-```
-
-**Rails not loading**: Ensure your `preload.rb` file correctly requires your Rails environment.
-
 ## Next Steps
 
 Now that you have Falcon running with Rails, explore these integration guides:
@@ -157,4 +139,4 @@ Now that you have Falcon running with Rails, explore these integration guides:
 
 ### Example Application
 
-Many of these integrations are demonstrated in the example application: https://github.com/socketry/falcon-rails-examples
+Many of these integrations are demonstrated in the example application: <https://github.com/socketry/falcon-rails-examples>.
