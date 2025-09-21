@@ -10,7 +10,7 @@ In your existing Rails application:
 bundle add falcon-rails
 ```
 
-You might also like to remove your existing web server, such as Puma, and replace it with Falcon:
+You might also like to remove your existing web server, such as Puma:
 
 ```bash
 bundle remove puma
@@ -18,7 +18,7 @@ bundle remove puma
 
 ## Development Usage
 
-Falcon is an Async-compatible web server that can be used with Rails. It provides high concurrency and low latency for web applications.
+Falcon is an Async-compatible web server that can be used with Rails. It provides high concurrency and low latency for web applications. It defaults to TLS (HTTPS) to enable HTTP/2 features and modern web standards.
 
 To use Falcon in development, first install the development TLS certificates:
 
@@ -42,11 +42,14 @@ If you prefer to run without HTTPS in development, you can bind to an explicit H
 bundle exec falcon serve -b http://localhost:3000
 ```
 
+> [!NOTE]
+> Unlike `bundle exec falcon serve` which defaults to HTTPS, `bin/rails server` will default to HTTP when using Falcon as the Rails server.
+
 ## Production Deployment
 
 For production deployments, use `falcon host` with a configuration file instead of `falcon serve`.
 
-### Setting up falcon.rb
+### Setting up `falcon.rb`
 
 Create a `falcon.rb` file in the root of your Rails application. This file configures the Falcon server for production:
 
@@ -67,7 +70,7 @@ service hostname do
 	# Default to port 3000 unless otherwise specified.
 	port {ENV.fetch("PORT", 3000).to_i}
 	
-	# Default to HTTP/1.1 for compatibility.
+	# Default to HTTP/1.1 for compatibility with proxies:
 	endpoint do
 		Async::HTTP::Endpoint
 			.parse("http://0.0.0.0:#{port}")
@@ -92,7 +95,7 @@ Create a `preload.rb` file in your application root to preload Rails before fork
 require_relative "config/environment"
 ```
 
-Preloading significantly improves performance by loading your Rails application into memory before forking worker processes.
+Preloading significantly reduces memory usage by loading your Rails application into memory before forking worker processes.
 
 ### Running the Production Server
 
@@ -107,16 +110,6 @@ Or use the falcon host command directly:
 ```bash
 bundle exec falcon host
 ```
-
-## Configuration Options
-
-### Environment Variables
-
-Common environment variables you can use:
-
-- `PORT`: Set the port number (default: 3000)
-- `WEB_CONCURRENCY`: Set the number of worker processes
-- `RAILS_ENV`: Set the Rails environment (production, development, etc.)
 
 ### Worker Processes
 
